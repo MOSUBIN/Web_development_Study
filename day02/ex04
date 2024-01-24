@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 태그 이용하기!</title>
+    <style>
+        ul.menu { /*solid 실선 dotted 점선 double 두갈래 선으로 보임 */
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            list-style: none; /* 옆에 목록 동그라미 삭제 ul.menu에서도 가능하고 ul.menu li에서도 가능 */
+            padding: 0;
+            width: 500px;
+            overflow: hidden;
+        }
+
+        ul.menu li {   /*li은 ul의 자식으로 했기에.*/
+            border: 0px solid blue;
+            width: 100px;
+            text-align: center;   /*좌우 센터 맞추기*/
+            float: left;      
+            box-sizing: border-box;
+            height: 40px;
+            line-height: 40px;    /*상하 센터 맞추기 height랑 길이 일치 시키기*/
+        }
+
+        ul.menu li:hover {
+            border-bottom: 2px solid red;
+           }  
+
+        li a {
+            text-decoration: none; /* 텍스트 밑에 줄 선 */
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>수빈이의 목록 태그 사용</h1>
+    <ul class="menu"> <!-- 커서가 있을 때 ctrl+c, ctrl+v하면 복사-->
+        <!-- 이름을 주고 싶을 때 고유한 이름을 주고 싶으면 id , 똑같은 이름을 여러개 쓰고 싶으면 class -->
+        <li><a href="">home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Guest</a></li>
+    </ul>
+</body>
+</html>
