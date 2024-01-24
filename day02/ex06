@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 폼 만들기 예제 1</title>
+
+</head>
+<body>
+    <h1>입력 폼 작성 예제 1</h1>
+    <!--action 폼을 어디에 줄지 정하는 것-->
+    <form action="aaaa.jsp" method="GET">
+        <fieldset> <!--fieldset으로 감싸주면 선이 생김-->
+        <legend>사용자 정보 입력</legend>
+        <label for="name">이름 : </label>
+        <input type="text" name="name" id="name" value=""><br>
+        <label for="password">비밀번호 : </label>
+        <input type="password" name="password" id="password"><br>
+        <label type="gender">성별 :</label>
+        <input type="radio" name="gender" id="gender">남
+        <input type="radio" name="gender" id="gender" checked>여
+        <br>
+        <label for="hobby">취미 : </label>
+        <input type="checkbox" name="hobby" id="hobby" value="a" checked>영화감상
+        <input type="checkbox" name="hobby" id="hobby" value="b">독서
+        <input type="checkbox" name="hobby" id="hobby" value="c">유튜브
+        <br><br>
+        <input type="submit" value="전달">          <!--submit 버튼 형식 -->
+        <br><br>
+        </fieldset>
+      
+    </form>
+</body>
+</html>
