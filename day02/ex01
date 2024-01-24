@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>수빈이의 홈페이지</h1> <!-- h1 제목 h1~h6 레벨이 나눠져있음-->
+        <ul><!-- ul 순서 없는 리스트 -->
+            <li><a href="sub01.html" target="showbox">Subpage01</a></li> <!-- li 리스트 태그 -->
+            <!-- blank 새로운 창 만들기 -->
+            <li><a href="sub02.html" target="showbox">Subpage02</a></li>  <!-- a href 링크 태그 -->
+            <li><a href="sub03.html" target="showbox">Subpage03</a></li>
+            <li><a href="sub04.html" target="showbox">Subpage04</a></li>
+            <li><a href="sub05.html" target="showbox">Subpage05</a></li>
+        </ul>
+    </div>
+    <iframe src="sub01.html" name="showbox"></iframe>
+</body>
+</html>
