@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024.01.23_ex03</title>
+    <style>
+        div.hodu_img {
+            width: 300px;
+            height: 300px;
+            background-image: url("week01/html_work/images/hodu.jpg");
+            background-size: 100px 300px;
+            color:red;
+            text-shadow: 1px 1px 1px;
+            background-repeat: no-repeat;  
+            background-position: center 10px;   
+            box-shadow: 1px 1px 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>호두 생일파티!</h1>
+    <P>
+        <a href="https://blog.naver.com/changjo0508">  <!-- 사진에도 링크 달 수 있음 -->
+        <img src="week01/html_work/images/hodu.jpg" 
+        alt="귀여운 호두" title="블로그로 이동합니다." 
+        width="500" height="500" /> 
+    </a>
+    </P>
+    <!--<div style="background-image: url('week01/html_work/images/hodu.jpg'); height: 200px;"></div> -->
+    <!--인라인 스타일 시트-->
+
+    <div class="hodu_img">호두 생일파티!</div>
+</body>
+</html>
