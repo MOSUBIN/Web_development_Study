@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //함수 선언할 땐 function 사용 //testFn()함수 이름 
+        //이벤트 핸들러 (버튼에 이벤트가 발생하면 실행)
+       function testFn() {
+        document.body.bgColor="#ffff00" ; // 가독성을 위해 ; 파이썬은 안 넣음 
+       }
+    </script>
+</head>
+<body>
+    <h2>덧셈 계산기</h2>
+    <button id ="resultBtn">확인</button>
+
+    <script>
+        //DOM 셀렉트 하기 
+        var resultBtn = document.getElementById("resultBtn");
+        //선택된 DOM에 이벤트 핸들러 붙이기 
+        resultBtn.onclick = testFn; //괄호를 붙이면 실행을 하라는 거고 안 붙이면 참조만 하라는 것. 
+    </script>
+</body>
+</html>
