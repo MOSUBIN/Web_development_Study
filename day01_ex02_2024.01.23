@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>모수빈 - 경북 네트워크형 캠퍼스</title>  <!-- 탭 이름 -->
+    <style>  
+        header {
+            background-color: purple;
+        }
+        nav a {
+            color:white;
+
+        }
+        main section{
+            background-color: palevioletred;
+        }
+        main section:nth-child(2){
+            background-color:plum;
+        }
+    </style> <!-- 요즘은 <body bgcolor = "pink">  이렇게 안에서 색상을 바꾸는 게 아니라 style 태그를 이용해서 바꿈 -->
+</head>
+<body bgcolor = "pink">   <!-- #ffff00처럼 색상을 16진수로 표현할 수 있음-->
+    <header> <!-- header로 써도되고 div로 써도됨!-->
+        <h1>Welcome to my MOBIN website</h1>   <!-- 제목 --> 
+        <p>MOBIN에 온 걸 환영합니다!</p> <!-- 문단 내용 -->  
+        <p>질문이 공부당</p>      
+    </header> 
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>나는 <strong>모수빈</strong> 개발자다!</p>
+            <p>나는 <b>모수빈</b> 개발자다!</p>   <!-- b는 html4 옛날 버전-->
+            <p>나는 <em>모수빈</em> 이다.</p>
+        </section>
+        <section>
+        <h2>About Home</h2>
+        <ul>  <!--ul>li*3하고 엔터-->
+            <li>웹 디자인</li>
+            <li>프론트엔드 개발</li>
+            <li>백엔드 개발</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Dog</h2>
+        <p>우리집 호두이다.</p>
+    </section>
+    </main>
+    <footer> 
+        <address>&copy;2024 My website. All rights reserved.</address>
+    </footer>
+</body>
+</html>
