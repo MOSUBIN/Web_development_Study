@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 적용하기</title>
+    <!-- 외부 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 내부 인터널 -->
+    <style>  
+    /* CSS 주석 */
+            .box {
+                background-color: yellow;
+            }
+    </style>
+</head>
+<body>
+    <!-- 인라인 -->
+    <div class="box" style="color:red"> Hello world </div>
+</body>
+</html>
