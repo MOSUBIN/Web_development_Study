@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그 사용</title>
+</head>
+<body>
+    <h1>테이블 표 만들기</h1>
+    <!-- bgcolor 색상 바꾸기-->
+    <table border="1" width="400" height="300" bgcolor="#ff0" cellspacing="6" cellpadding="10">
+        <tbody>
+        <!-- table 테이블 테두리-->
+        <!--tr 테이블 안 -->
+        <!--위에 있는 것들이 밑에까지 효과를 줌-->
+        <tr bgcolor="red">
+            <td width="100">1</td>
+            <td width="100" colspan="2">1</td>
+            <td width="100">1</td>
+        <!--colspan="2" 세로로 두 셀을 합치는 것, rowspan 가로로 두 셀을 합치는 것 -->    
+        </tr>
+        <tr bgcolor="red">
+            <td bgcolor="blue" rowspan="2">1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr bgcolor="red">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+    <!--순서에 상관없이 thead는 맨 위, tfoot는 맨 밑    -->
+    <thead>
+        <tr>
+            <th colspan="4">테이블 병합 연습</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th colspan="4">여기는 바닥</th>
+        </tr>
+    </tfoot>
+    </table>
+    
+</body>
+</html>
