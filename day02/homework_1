@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 210mm; height: 297mm; margin: 0; padding: 0;"> <!-- A4 용지 사이즈 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>테이블을 이용한 이력서 작성</title>
+    <style>
+        /*A4용지 사이즈 맞추기 body 설정*/
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        hr{
+            border: solid 1.5px;
+        }
+        table{
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        tr.tr1{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        td.td1{
+            background-color: antiquewhite;
+        }
+        td{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <hr> <!-- hr 줄 선 긋기 -->
+    <h1>이력서</h1>
+    <hr>
+    <br> <!-- br 줄 띄우기 -->
+    <br>
+    <h4>1. 기초자료</h4>
+
+    <table border="none">
+        <tr>
+            <td rowspan="8" width="200" height="20" >사진</td>
+            <td class="td1" width="200" height="20">성명</td>
+            <td width="200" height="20"></td>
+            <td class="td1"  width="200" height="20">한문</td>
+            <td width="200" height="20"></td>
+        </tr>
+
+        <tr>
+            <td class="td1" width="200" height="20">주민번호</td>
+            <td colspan="3" width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td class="td1" width="200" height="20">E-mail</td>
+            <td colspan="3" width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td class="td1" width="200" height="20">전화번호</td>
+            <td width="200" height="20"></td>
+            <td class="td1"  width="200" height="20">휴대폰</td>
+            <td width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td class="td1" width="200" height="20">우편번호</td>
+            <td width="200" height="20"></td>
+            <td class="td1"  width="200" height="20">비상연락처</td>
+            <td width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td class="td1" width="200" height="20">주소</td>
+            <td colspan="3" width="200" height="20"></td>
+        </tr>
+    </table>
+
+
+
+    <h4>2. 학력사항</h4>
+    <table border="none">
+        <tr class="tr1">
+            <td width="500" height="20">기간</td>
+            <td width="500" height="20">상세내용</td>
+            <td width="500" height="20">비고</td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+    </table>  
+    <br>
+
+    <h4>3. 경력사항</h4>
+    <table border="none">
+        <tr class="tr1">
+            <td width="500" height="20">기간</td>
+            <td width="500" height="20">관련내용</td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+            <td height="20"></td>
+        </tr>
+
+    </table>
+
+    <h4>4. 개인능력 및 장단점</h4>
+
+    <table border="none">
+        <tr>
+            <td rowspan="2" class="td1" width="300" height="20">자격 및 포상</td>
+            <td colspan="2" width="400" height="20"></td>
+            <td width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td colspan="2" width="400" height="20"></td>
+            <td width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="td1" width="200" height="20">컴퓨터 능력</td>
+            <td width="200" height="20"></td>
+            <td class="td1"  width="200" height="20">상/중/하</td>
+            <td width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td width="200" height="20"></td>
+            <td class="td1"  width="200" height="20">상/중/하</td>
+            <td width="200" height="20"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="td1" width="200" height="20">취미</td>
+            <td width="200" height="20"></td>
+            <td class="td1"  width="200" height="20">특기</td>
+            <td width="200" height="20"></td>
+        </tr>
+
+    </table>
+    <p>위의 사실이 틀림없을 서약합니다.</p>
+    <br>
+    <p>작성일 월 일</p>
+    <p>작성자 (인)</p>
+</body>
+</html>
