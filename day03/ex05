@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //form 전체에 이벤트 핸들러를 준다
+        function valibateForm(form) {
+            //폼이 제출될 때 일어나는 기본 동작인 페이지 새로고침을 막기 위해 사용 (event.preventDefalut())
+            event.preventDefault(); // 기본기능 일시정지.
+            //변수 resultArea 
+            var resultArea = document.getElementById("result");
+
+            if(form.title.value == "") {
+                //alert("제목을 입력 하세요!");
+                resultArea.innerText = "결과: 제목을 입력 하세요!";
+                form.title.focus();
+                return;
+            }
+            if(form.writer.value == "") {
+                //alert("성명을 입력 하세요!");
+                resultArea.innerText = "결과: 성명을 입력 하세요!";
+                form.writer.focus();
+                return;
+            }
+            if(Number(form.writer.value.length) < 2) {
+                //alert("성명은 2글자 이상이어야 합니다!");
+                resultArea.innerText = "결과: 성명은 2글자 이상이어야 합니다!";
+                form.writer.value = "";
+                form.writer.focus();
+                return;
+            }
+            if(form.content.value == "") {
+                //alert("내용을 입력 하세요!");
+                resultArea.innerText = "결과: 내용을 입력 하세요!";
+                form.content.focus();
+                return;
+            }
+            //`` (백틱)를 이용한 템플릿 리터럴
+            document.getElementById("result").innerHTML = `
+                <p>제목: ${form.title.value}</p>
+                <p>성명: ${form.writer.value}</p>
+                <p>내용: ${form.content.value}</p>
+            `;
+
+            // 자바스크립트의 문자열: "", ''
+            // 포멧 문자열 : ``
+        }
+    </script>
+</head>
+<body>
+    <!-- 주석 달기 단축키: Ctrl + / -->
+    <!-- 백문이불여일타 -->
+    <h2>자바스크립트 폼 유효성 검사 실습</h2>
+    <form action="" onsubmit="valibateForm(this)" name="form1">
+        <label for="title">제목</label><input type="text" name="title" id="title"><br>
+        <label for="writer">성명</label><input type="text" name="writer" id="writer"><br>
+        <label for="content">내용</label><textarea name="content" id="content"></textarea><br>
+        <input type="submit" value="저장"><br>
+    </form>
+    <hr/>
+    <div id="result">결과: </div>
+</body>
+</html>
