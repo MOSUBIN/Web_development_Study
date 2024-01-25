@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        /* '*' 전체 */
+        *{
+            border: 1px solid gray;
+            padding: 3px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+        div, main, header, footer, aside{
+            border:1px solid red;
+        }
+        ul, section{
+            border: 1px solid blue;
+        }
+        main > div, aside{
+            float:left;
+        }
+        aside{
+            width: 175px;
+            height: 300px;
+        }
+        main > div {
+            width: 400px;
+        }
+        /*footer가 밑으로 안 가면 clear: both를 사용 */
+        footer {
+            clear: both;
+        }
+        /*페이지 크기 설정 */
+        div#page {
+            margin: 8px auto 5px auto;
+        }
+        main {
+            overflow: hidden;
+        }
+        main>div>section:nth-child(2)
+        {
+            background-color: aqua;
+            width: 200px;
+        }
+        main>div>section:nth-child(3)
+        {
+            background-color: aqua;
+            width: 200px;
+        }
+        main>div>section:nth-child(2),main>div>section:nth-child(3){
+            float: left;
+            width: 183px;
+            height: 200px;
+        }
+        main>div>section:nth-child(1)
+        {
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>수빈이의 홈페이지</h1>
+            <ul> <!--목록 태그-->
+              <!--<li>홈</li>
+                <li>프로필</li>
+                <li>갤러리</li>
+                <li>강의</li>
+                <li>게시판</li> --> 
+            </ul>
+        </header>
+        <main>
+            <aside>left</aside>
+            <div>
+                <section>banner</section>
+                <section>1</section>
+                <section>2</section>
+            </div>
+            <aside>right</aside>
+        </main>
+        <footer>
+            <address>
+                comstudy21@naver.com
+            </address>
+        </footer>
+
+    </div>
+</body>
+</html>
