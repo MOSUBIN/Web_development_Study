@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>덧셈 계산기 만들기</title>
+</head>
+<body>
+    <h2>덧셈 계산기</h2>
+    <form action="" id="calc">
+        <input type="text" size="1" name="num1" value="2">
+        <span>+</span> <!--<span>은 줄 바꿈이 되지 않다는 점 -->
+        <input type="text" size="1" name="num2" value="3">
+        <input type="submit" value="=">
+        <input type="text" size="1" name="result" >
+        <br>
+        <br>
+        <input type="reset" value="초기화">  <!--reset 초기화 -->
+    </form>
+    <script> 
+
+        var calcForm = document.getElementById("calc");
+        calcForm.onsubmit = function() {
+            event.preventDefault(); // form의 기본 기능 일시 정지
+            var num1 = parseInt(calcForm.num1.value);
+            var num2 = parseInt(calcForm.num2.value);
+            console.log(num1, num2);
+            var result = num1 + num2;
+            console.log("result=", result);
+            calcForm.result.value = result;
+        }
+    </script>
+
+</body>
+</html>
