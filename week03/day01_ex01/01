@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Ajax 연습</h1>
+    <a href = "data.html">data.html</a>  <!-- a 링크 -->
+    <hr> <!-- 줄 -->
+    <div id="box">여기에 data.html 내용이 로드됩니다.</div>
+    <br>
+    <button id="loadBtn">데이터 로드</button>
+    
+    <script>
+      document.getElementById("loadBtn").onclick = function(e)
+      {
+        let xhr = new XMLHttpRequest();  // 객체 생성
+        console.dir(xhr);
+
+        xhr.onload = function(e){
+            console.log(xhr.responseText);
+            document.getElementById("box").innerHTML=xhr.responseText;
+            //innerHTML = 해당 요소의 내부 HTML 콘텐츠를 나타내는 속성 
+        }
+        //oepen([GET/POST], url, [동기/비동기] )
+        xhr.open("GET", "data.html", true);
+        xhr.send();  //실제로 서버에 요청을 보내는 역할 
+      }
+    </script>
+
+
+
+</body>
+</html>
